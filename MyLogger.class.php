@@ -34,13 +34,13 @@ class MyLogger {
         return "[" . date('m/d/Y h:i:s', time()) . "] ";
     }
 
-    public function setOrigin($origin) {
+    public function setOrigin($origin)
+    {
         $this->origin = $origin;
     }
 
 }
 
 $logger = new MyLogger();
-
 $logger->setOrigin('TestClass');
 $logger->error('dit is een error');
